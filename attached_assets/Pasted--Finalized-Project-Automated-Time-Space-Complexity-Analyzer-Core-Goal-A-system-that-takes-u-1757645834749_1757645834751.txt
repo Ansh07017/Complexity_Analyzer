@@ -1,0 +1,165 @@
+🚀 Finalized Project: Automated Time & Space Complexity Analyzer
+🔹 Core Goal
+
+A system that takes user code (Python, Java, C++, JavaScript), runs it safely, analyzes time and space complexity, detects infinite loops/inefficiencies, and produces an interactive + exportable report with learning resources.
+
+🔹 Final Tech Stack
+Frontend (User Experience)
+
+Framework → Next.js (React + SSR) → optimized rendering & fast performance.
+
+Code Editor → Monaco Editor (same as VSCode) → rich code editing.
+
+Styling → TailwindCSS → lightweight & responsive.
+
+Charts/Graphs → Chart.js (simple) or D3.js (advanced).
+
+👉 Optimized for fast load, smooth interaction, professional look.
+
+Backend (Orchestration & APIs)
+
+Framework → FastAPI (Python) → async, high-performance APIs.
+
+Profiling Engine →
+
+Python (psutil, time.perf_counter_ns) → runtime & memory.
+
+Rust (hyperfine) (optional integration for precise benchmarking).
+
+Complexity Detection → SciPy + ML classifier (runtime fitting to O(1), O(n), O(n log n), O(n²)).
+
+👉 Optimized because FastAPI is faster than Flask, async-friendly, and Python has the richest profiling ecosystem.
+
+Execution Sandbox (Safety Layer)
+
+Isolation → Firecracker microVMs (preferred) or Docker (simpler dev).
+
+Supported Languages:
+
+Python (CPython 3.x)
+
+Java (OpenJDK 21 LTS)
+
+C++ (GCC 13 with -O2)
+
+JavaScript (Node.js 22 LTS)
+
+Limits:
+
+Input size: n ≤ 10^7
+
+Max runtime per test: 5 seconds
+
+Max memory: 1 GB
+
+CPU quota: 1 core
+
+👉 Optimized for both safety (no halting attacks) and performance.
+
+Database & Storage
+
+Database → PostgreSQL (structured reports, user history).
+
+Cache/Queue → Redis (store recent reports, job queues).
+
+File Storage → MinIO (S3-compatible) for PDF/JSON reports.
+
+👉 Optimized for scalability + durability.
+
+Report Generation
+
+Formats: JSON (API), HTML (UI), PDF (download).
+
+Libraries:
+
+ReportLab (PDF).
+
+Next.js SSR pages (HTML).
+
+👉 Reports are human-readable + machine-readable.
+
+🔹 Final System Architecture (Flow)
+
+User Input (Frontend)
+
+Paste code → select language → set test input sizes (up to 10⁷).
+
+Request to Backend (FastAPI)
+
+Code packaged → sent to API.
+
+Sandbox Execution (Firecracker/Docker)
+
+Run code with test inputs.
+
+Collect runtime & memory usage.
+
+Detect infinite loop if stuck on small n.
+
+Complexity Analyzer
+
+Scale tests (10² → 10⁷).
+
+Fit runtime growth curve.
+
+Detect time complexity.
+
+Analyze space complexity (peak memory usage).
+
+Knowledge Mapper
+
+Map detected complexity to GeeksforGeeks, FreeCodeCamp articles.
+
+Report Generator
+
+Generate JSON, Graphs, PDF.
+
+Provide warnings + optimizations.
+
+Frontend Dashboard
+
+Show: execution output, runtime/memory graphs, complexity results, warnings, learning links.
+
+🔹 Example Report Output
+{
+  "status": "success",
+  "language": "python",
+  "algorithm_detected": "Bubble Sort",
+  "time_complexity": {
+    "runtime_fit": "O(n^2)",
+    "test_results": {
+      "n=1000": "0.01s",
+      "n=5000": "1.2s",
+      "n=10000": "4.8s"
+    },
+    "cap": "Analysis limited to n ≤ 10^7"
+  },
+  "space_complexity": {
+    "estimated": "O(n)",
+    "peak_memory": "12 MB"
+  },
+  "warnings": [
+    "Execution impractical for n > 10^4",
+    "Better alternative: Merge Sort (O(n log n))"
+  ],
+  "resources": [
+    "https://www.geeksforgeeks.org/bubble-sort/",
+    "https://www.freecodecamp.org/news/sorting-algorithms/"
+  ],
+  "environment": {
+    "sandbox": "Firecracker VM",
+    "cpu_limit": "1 core",
+    "memory_limit": "1 GB",
+    "timeout": "5s"
+  }
+}
+
+🔹 Why This Architecture is Optimized
+
+✅ Safe → Firecracker sandbox prevents halting/malicious code.
+✅ Scalable → FastAPI + Redis queue handles multiple users.
+✅ Precise → SciPy + ML fitting ensures accurate complexity classification.
+✅ User-friendly → Next.js UI with graphs + interactive reports.
+✅ Educational → Direct links to learning resources.
+
+🔥 This finalized version is production-ready: modern stack, safety-first, and optimized for performance.
