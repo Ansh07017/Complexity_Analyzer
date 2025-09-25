@@ -1,0 +1,44 @@
+Based on your repository requirements for the Complexity Analyzer application, here are the functional requirements for the MVP enhancement:
+
+Algorithm Selection Dashboard a. Display grid of available algorithm categories (Sorting, Searching, Graph Algorithms, Dynamic Programming) b. Show algorithm cards with complexity indicators (Time/Space complexity badges) c. Include search/filter functionality to find specific algorithms d. Add "Recently Used" and "Popular" algorithm sections
+
+Enhanced Sorting Algorithms Visualization Page a. Maintain existing sorting algorithms with improved animations b. Add step-by-step breakdown with complexity analysis at each step c. Include input size selector with real-time complexity impact display d. Show comparison table of different sorting algorithms side-by-side
+
+New Searching Algorithms Page a. Binary Search visualization with array splitting animation b. Linear Search comparison with step counter c. Interactive input field for custom search values d. Real-time complexity calculation display during search process
+
+Graph Algorithms Visualization Page a. BFS (Breadth-First Search) with queue visualization and level-by-level traversal b. DFS (Depth-First Search) with stack visualization and path highlighting c. Shortest Path algorithms (Dijkstra's) with distance table updates d. Interactive graph builder where users can add/remove nodes and edges e. TSP (Traveling Salesman Problem) with route optimization animation
+
+Real-World Examples Gallery a. GPS Navigation example for shortest path algorithms b. Social Media Friend Suggestions for BFS/DFS c. Library Book Search for binary search demonstration d. Package Delivery Route for TSP visualization e. Simple explanatory text connecting each example to daily life repository link : link:https://github.com/Ansh07017/Complexity_Analyzer ,clone it to your local system
+
+I'll help you create an enhanced Complexity Analyzer application based on your detailed requirements. This will be a comprehensive educational tool for visualizing algorithm complexities with interactive demonstrations.
+
+Looking at your requirements, I can see you want to build upon an existing repository with significant enhancements including:
+
+Algorithm selection dashboard with categorization
+Enhanced sorting visualizations with step-by-step analysis
+New searching algorithms page with interactive features
+Graph algorithms with BFS/DFS/Dijkstra visualizations
+Real-world examples connecting algorithms to daily life
+This will be a public educational application accessible to all users without authentication, perfect for students and developers learning about algorithm complexity.
+
+Enhanced Complexity Analyzer Application
+Features
+Algorithm Selection DashboardGrid layout displaying algorithm categories (Sorting, Searching, Graph, Dynamic Programming) with complexity badges, search/filter functionality, and Recently Used/Popular sections
+Enhanced Sorting Algorithms VisualizationInteractive sorting demonstrations with step-by-step breakdown, complexity analysis at each step, input size selector, and side-by-side algorithm comparison table
+Searching Algorithms Interactive PageBinary Search with array splitting animation, Linear Search comparison with step counter, custom search input field, and real-time complexity calculation display
+Graph Algorithms VisualizationBFS with queue visualization, DFS with stack visualization and path highlighting, Dijkstra's shortest path with distance table updates, interactive graph builder for adding/removing nodes and edges
+TSP Route OptimizationTraveling Salesman Problem visualization with route optimization animation and distance calculation display
+Real-World Examples GalleryGPS Navigation for shortest path, Social Media Friend Suggestions for BFS/DFS, Library Book Search for binary search, Package Delivery Route for TSP with explanatory text connecting to daily life
+Interactive Algorithm ControlsPlay/pause/step controls for animations, speed adjustment slider, input data customization, and complexity metrics display panel
+Educational Content IntegrationAlgorithm explanation panels, complexity notation guide, performance comparison charts, and learning progress tracking
+Styles
+Primary Color
+Secondary Color
+Layout
+Modern card-based design with responsive grid layout, clean navigation sidebar, and full-screen visualization areas
+Animation Style
+Smooth transitions for algorithm steps, color-coded complexity indicators (green for O(1), yellow for O(log n), red for O(n²)), and interactive hover effects
+Typography
+Clear sans-serif fonts for readability, monospace for code snippets, and hierarchical text sizing for educational content
+Interactive Elements
+Prominent control buttons, real-time feedback indicators, progress bars for algorithm execution, and tooltip explanations
